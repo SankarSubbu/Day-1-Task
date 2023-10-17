@@ -1,0 +1,40 @@
+Objects and its internal representation in Javascript
+
+Objects are fundamental data type in Javascript. They are used to represent real-world entites, such as users, products and orders. Objects can contain properties and methods.
+Properties are data that belongs to the object, and methods are functions that can be performed on the object.
+
+Objects are created by using the {} curly braces. For example, the following code a new object called user:
+ 
+	const user = {
+	name : "Sankara",
+	age : 21
+	occupation: "Software Developer"
+	};
+	
+	The object has three properties: name, age and occupation. We can access the values of these properties using the dot notation. For example, to get the user's name we would write user.name
+	
+	Objects can also contain methods. Methods are functions that are defined on the object. We can call then methods using the dot notation. For example, to create a method called greet()
+	that returns a greeting message for the user it would be:
+	
+	user.greet = function() {
+	return 'Hello my name is ${this.name}.'
+	};
+	To call the greet() method, we would write user.greet(). This would return the following message:
+
+Hello, my name is John Doe.
+Internal representation of objects in JavaScript
+Objects in JavaScript are implemented as hash tables. A hash table is a data structure that maps keys to values. In the case of objects, the keys are the property names and the values are the property values.
+
+When you create an object in JavaScript, the JavaScript engine creates a new hash table and stores the object's properties in the hash table. The hash table is implemented as a linked list of key-value pairs.
+
+When you access a property of an object, the JavaScript engine uses the property name to look up the corresponding value in the hash table. If the property name is not found in the hash table, the JavaScript engine returns undefined.
+
+Conclusion
+Objects are a powerful data structure in JavaScript. They can be used to represent complex real-world entities. Objects are implemented as hash tables, which makes them efficient for accessing and modifying properties.
+
+Here are some additional things to keep in mind about objects in JavaScript:
+
+Objects are passed by reference in JavaScript. This means that when you pass an object to a function, the function is not passed a copy of the object, but a reference to the original object.
+Objects are mutable in JavaScript. This means that the properties of an object can be changed after the object is created.
+Objects can inherit properties and methods from other objects. This is done using the extends keyword.
+I hope this blog post has given you a better understanding of objects and their internal representation in JavaScript.

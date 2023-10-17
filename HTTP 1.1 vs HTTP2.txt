@@ -1,0 +1,41 @@
+What is HTTP?
+HTTP stands for hypertext transfer protocol, and it is the basis for almost all web applications. 
+More specifically, HTTP is the method computers and servers use to request and send information. 
+For instance, when someone navigates to yahoo.com on their laptop, their web browser sends an 
+HTTP request to the Cloudflare servers for the content that appears on the page. 
+Then, yahoo servers send HTTP responses with the text, images, and formatting that 
+the browser displays to the user.
+
+
+What is HTTP/1.1? 
+The first usable version of HTTP was created in 1997. 
+Because it went through several stages of development, this first version of HTTP was called HTTP/1.1. 
+This version is still in use on the web.
+
+What is HTTP2?
+HTTP/2 is a major revision of the HTTP network protocol used by the World Wide Web. 
+It was derived from the earlier experimental SPDY protocol, originally developed by Google. 
+HTTP/2 was developed by the HTTP Working Group of the Internet Engineering Task Force.
+
+The key difference between HTTP 1.1 and HTTP 2 is that HTTP 2 uses a binary framing layer instead of a text-based layer. This means that HTTP 2 messages are more compact and easier to parse, which can lead to significant performance improvements.
+
+Here is a table summarizing the key differences between HTTP 1.1 and HTTP 2:
+
+Feature	HTTP 1.1	HTTP 2
+Framing	Text-based	Binary
+Multiplexing	No	Yes
+Header compression	No	Yes
+Server push	No	Yes
+In addition to the above features, HTTP 2 also includes other features that can improve performance, such as:
+
+Stream prioritization: HTTP 2 allows the client and server to prioritize requests, which can help to improve the loading performance of pages with many resources.
+HPACK header compression: HTTP 2 uses a more efficient header compression algorithm than HTTP 1.1, which can further reduce the size of HTTP messages.
+Overall, HTTP 2 is a significant improvement over HTTP 1.1 in terms of performance and efficiency. It is now supported by all major browsers and web servers, so it is a good idea to enable HTTP 2 on your website or web application.
+
+Here are some of the benefits of using HTTP 2 over HTTP 1.1:
+
+Faster page loading times
+Improved performance for websites and web applications with many resources
+Reduced bandwidth usage
+Improved security
+If you are looking to improve the performance of your website or web application, I recommend enabling HTTP 2.
